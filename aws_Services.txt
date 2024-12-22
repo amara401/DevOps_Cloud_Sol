@@ -1,0 +1,76 @@
+Compute:
+	EC2
+	lambda
+	Elastic Beanstalk
+
+Containers:
+	1. Elastic Container Service
+	2. Elastic Kubernetes Service
+	3. Elastic Container Registry
+	
+Storage:
+	S3
+	EFS
+
+Database
+	RDS
+	ElastiCache
+	DynamoDB
+	
+Networking & Content Delivery
+	VPC
+	CloudFront
+	API Gateway
+	Route 53
+	Direct Connect
+	
+Developer Tools(Optional)
+	CodeCommit
+	CodeBuild
+	CodeDeploy
+	CodePipeline
+
+Management & Governance
+	CloudWatch
+	AWS Auto Scaling
+	CloudFormation
+	Systems Manager
+	Amazon Grafana (Optional)
+	Amazon Prometheus(Optional)
+	CloudTrail
+	
+Security, Identity, & Compliance:
+	Resource Access Manager
+	Cognito
+	Secrets Manager
+	Amazon Inspector
+	IAM Identity Center
+	Certificate Manager
+	Key Management Service
+	Security Hub
+	AWS Audit Manager
+	WAF & Shield
+	IAM - DONE
+
+Application Integration
+	Step Functions
+	Simple Notification Service
+	Simple Queue Service
+	
+Analytics(Optional)
+	Athena
+	Amazon Redshift
+	CloudSearch
+	Amazon OpenSearch Service
+	Kinesis
+	QuickSight
+	AWS Glue DataBrew
+	AWS Glue
+	Amazon Data Firehose
+	EMR
+	
+
+aws s3api put-object --bucket testpoc-x234sa --key aws_serv.txt --body aws_serv.txt
+
+
+https://docs.aws.amazon.com/singlesignon/latest/userguide/manage-your-identity-source.html
