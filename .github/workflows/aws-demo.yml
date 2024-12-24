@@ -33,3 +33,7 @@ jobs:
       - name: Sts GetCallerIdentity
         run: |
           aws sts get-caller-identity
+
+      - name: Get s3 buckets
+        run: |
+          aws s3 ls
