@@ -37,5 +37,5 @@ jobs:
       - name: Get s3 buckets
         run: |
           aws s3 ls
-          aws s3api list-objects --bucket test-sgdfkhkh132469843/test
+          aws s3api list-objects --bucket test-sgdfkhkh132469843
           # aws s3 cp s3_bucket_policy.json s3://test-sgdfkhkh132469843/ 
