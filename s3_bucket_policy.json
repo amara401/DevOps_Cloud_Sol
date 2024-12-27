@@ -1,0 +1,40 @@
+{
+	"Version": "2012-10-17",
+	"Id": "Policy1735048236345",
+	"Statement": [
+		{
+			"Sid": "Stmt17350482322588",
+			"Effect": "Deny",
+			"Principal": "*",
+			"Action": "s3:PutObject",
+			"Resource": [
+				"arn:aws:s3:::test-sgdfkhkh132469843",
+				"arn:aws:s3:::test-sgdfkhkh132469843/*"
+			]
+		},
+		{
+            "Effect":"Allow",
+            "Action": "s3:PutObject",
+            "Resource": [
+		    	"arn:aws:s3:::test-sgdfkhkh132469843",
+		    	"arn:aws:s3:::test-sgdfkhkh132469843/*"
+		    ],
+            "Principal":{
+               "AWS":"arn:aws:iam::209479262433:role/Github_OIDC_Access_role"
+            }
+        },
+        {
+            "Effect":"Deny",
+            "Action": [
+			    "s3:ListBucket"
+		    ],
+            "Resource": [
+				"arn:aws:s3:::test-sgdfkhkh132469843",
+				"arn:aws:s3:::test-sgdfkhkh132469843/*"
+			],
+            "Principal":{
+                "AWS":"arn:aws:iam::209479262433:role/Github_OIDC_Access_role"
+            }
+        }
+	]
+}
